@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {  
+  int ae=0 , ai=0, ao=0, ags; // as variavel////   
+  while(ags!=4){        scanf("%d",&ags);       
+ switch (ags){            
+case 1:ae++;break;// opcãos gasolina , alcool e diesel.. para escolher..////           
+ case 2:ai++;break;           
+ case 3:ao++;break;            
+case 4:break;        
+}    
+ }    
+printf("MUITO OBRIGADO\n");   
+ printf("Alcool: %d\n",ae);   
+ printf("Gasolina: %d\n",ai);    
+printf("Diesel: %d\n",ao);    
+ return 0;
+} 
