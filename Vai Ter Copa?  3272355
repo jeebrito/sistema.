@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main() { 
+int a=0;
+while(scanf("%d",&a)!=EOF){ //// vai ter copa!!//////    
+if (a>0)     
+printf("vai ter duas!\n"); //// cada numeros vai mundando cada copa////    
+else    
+printf("vai ter copa!\n"); 
+}    
+return 0;
+}
