@@ -1,0 +1,24 @@
+#include <stdio.h>
+#define MAXIMO 12
+int 
+main() {   
+int a, b, c;        
+char v;    
+float matriz[MAXIMO][MAXIMO], s=0, m;     
+scanf("%d %c", &a, &v); //receber numero da linha e a operaçao//    
+if(a>=0&&a<=11){       
+for(b=0;b<MAXIMO;b++){//receber os numeros da matriz//    
+for(c=0;c<MAXIMO;c++){    
+scanf("%f", &matriz[b][c]);    
+if(b==a)    
+s+=matriz[b][c];    
+}
+}    
+m=s/12;    
+if(v=='S')    
+printf("%.1f\n", s);    
+else if(v=='M')    
+printf("%.1f\n", m);
+}    
+return 0;
+}
