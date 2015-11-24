@@ -1,0 +1,33 @@
+#include <stdio.h>  
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h> 
+int main(){      
+int valor, a, b, contando=0; // variaveis//     
+char n2[1000], n1[1000];     
+scanf("%d", &valor);     
+for(a=0; a<valor; a++)
+{     
+scanf("%s%s", n2, n1);      
+if(strlen(n1) > strlen(n2))
+{        
+printf("nao encaixa\n");         
+continue;     
+}           
+if(strcmp(n2, n1) == 0)
+{         
+printf("encaixa\n");     
+continue;         
+}     
+for(b=0; b<strlen(n1); b++)
+{     
+if(n2[strlen(n2) - strlen(n1) + b] == n1[b])     contando++;                   
+else
+{
+contando = -1;break;
+}     
+}     
+printf("%s\n", contando ==-1? "nao encaixa" : "encaixa");       
+}     
+system ("pause");
+} 
