@@ -1,0 +1,37 @@
+Enter file contents here#include <stdio.h>   
+int main() {       
+int n, sm = 0, a, b; //  variaveis //     
+char vetor[10000];    
+scanf("%d", &n);//veariavel em que o programa irá receber    
+for(a = 0; a < n; a++){// De acordo com o numero que o usuario digitar vai ser a quantidade de vezes que ele podera informar para saber quantos leds vai precisar para formar o numero.         
+scanf("%s", vetor);        
+for(b = 0; b < strlen(vetor) ; b++)
+{        
+switch(vetor[b]){             
+case '0': sm = sm + 6;             
+break;            
+case '1': sm = sm + 2;            
+break;            
+case '2': sm = sm + 5;            
+break;            
+case '3': sm = sm + 5;            
+break;            
+case '4': sm = sm + 4;            
+break;            
+case '5': sm = sm + 5;            
+break;            
+case '6': sm = sm + 6;            
+break;            
+case '7': sm = sm + 3;            
+break;            
+case '8': sm = sm + 7;            
+break;            
+case '9': sm = sm + 6;            
+break;           
+ }
+               }            
+printf("%d leds\n", sm);// Apresenta na tela a quantidade de Leds que precisa para formar o numero escolhido pelo usuario.             
+sm = 0;    
+}       
+return 0;
+} 
